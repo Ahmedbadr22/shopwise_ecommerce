@@ -13,7 +13,7 @@ const ExclusiveProduct = () =>{
                     </svg>  
                 </a>
             </div>
-            <div className="product-grid ">
+            <div className="product-grid pt-3 pb-3">
                 <MainProductCard />
                 <MainProductCard />
                 <MainProductCard />

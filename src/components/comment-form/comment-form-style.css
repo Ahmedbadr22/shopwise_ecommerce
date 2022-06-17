@@ -1,0 +1,17 @@
+.comment-form .comment-form-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--red-color);
+}
+
+.comment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-form .rating{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

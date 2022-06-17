@@ -1,0 +1,7 @@
+.wishlist-section{
+    padding: 100px 100px;
+}
+
+.wishlist-section .product-img{
+    width: 150px !important;
+}

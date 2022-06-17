@@ -1,0 +1,52 @@
+.comment-section .comment{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment-section .comment .comment-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 320px) {
+    .comment-section .comment .comment-content{
+        gap: 20px;
+    }
+}
+
+.comment-section .comment .comment-header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.comment-section .comment-header .rating-date{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+.comment-section .rating-date .v-divider::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #646a7c;
+    left: calc(50% + 10px);
+    bottom: 0;
+}
+
+@media (max-width: 320px) {
+    .comment-section .rating-date .v-divider::after{
+        display: none;
+    }
+}

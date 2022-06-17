@@ -1,12 +1,11 @@
-import banner1 from "../../../images/furniture_banner1_sales.jpg";
-import banner2 from "../../../images/furniture_banner2_sales.jpg";
-import OwlCarousel from 'react-owl-carousel';
-import MainProductCard from "../../card/product-card-1/MainProductCard";
-import "./sales-section-style.css";
+import "./sales-style.css";
+import faBan1 from "../../../images/furniture_banner1_sales.jpg";
+import faBan2 from "../../../images/furniture_banner2_sales.jpg";
+import ProductSlider from "../../product-slider/ProductSlider";
 
 const SalesSection = () =>{
     return(
-        <div className="container mb-5">
+        <div className="sales-section container mb-5">
             <div className="exclusive-product-section-header">
                 <span className="section-title">Sales</span>
                 <a href="/" className="view-all">
@@ -16,16 +15,16 @@ const SalesSection = () =>{
                     </svg>  
                 </a>
             </div>
-            <div className="sales-secton-body">
-                <div className="sales-banner">
-                    <div className="banner1" style={{backgroundImage: `url(${banner1})`}}>
+            <div className="sales-section-body">
+                <div className="sales-banners">
+                    <div className="banner1 shadow-sm" style={{backgroundImage: `url(${faBan1})`}}>
                         <div className="banner1-content">
                             <h6>Super Sale</h6>
                             <h2 className=" pb-3">New Collection</h2>
                             <a href="/" className="carousel-btn">Shop Now</a>
                         </div>
                     </div>
-                    <div className="banner2" style={{backgroundImage: `url(${banner2})`}}>
+                    <div className="banner2 shadow-sm" style={{backgroundImage: `url(${faBan2})`}}>
                         <div className="banner2-content">
                             <h6>New Season</h6>
                             <h2 className=" pb-3">Sale 40% Off</h2>
@@ -33,59 +32,12 @@ const SalesSection = () =>{
                         </div>
                     </div>
                 </div>
-                <div className="flash-deals w-100">
-                    <OwlCarousel
-                        className="owl-theme"
-                        nav
-                        autoPlay
-                        dots={false}
-                        smartSpeed={2000}
-                        responsive={
-                            {
-                                0:{
-                                    items:1
-                                },
-                                500:{
-                                    items:1
-                                },
-                                700:{
-                                    items:2
-                                },
-                                1000:{
-                                    items:3
-                                },
-                                1200:{
-                                    items:4
-                                }
-                            }
-                        }
-                        >
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                        <div className="item">
-                            <MainProductCard />
-                        </div>
-                    </OwlCarousel>
+            </div>
+            <div className="sales-product-slider mt-2">
+                <div className="sales-product-section-header p-3">
+                    <span className="section-middle-title">Products On Sales</span>
                 </div>
+                <ProductSlider />
             </div>
         </div>
     );

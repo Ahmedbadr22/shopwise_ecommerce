@@ -1,20 +1,17 @@
-.item{
+.landing-carousel .item{
     background-position: center center;
     background-size: cover;
     height: 500px;
 }
 
-
-
-
 @media only screen and (max-width: 1199px){
-    .item{
+    .landing-carousel .item{
         height: 500px;
     }
 }
 
 @media only screen and (max-width: 991px){
-    .item{
+    .landing-carousel .item{
         background-position: center center;
         background-size: cover;
         height: 400px;
@@ -22,13 +19,13 @@
 }
 
 @media only screen and (max-width: 767px){
-    .item{
+    .landing-carousel .item{
         height: 300px;
     }
 }
 
 @media only screen and (max-width: 575px){
-    .item{
+    .landing-carousel .item{
         height: 350px;
     }
 }
@@ -108,6 +105,7 @@
     background-color: #333;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+.landing-carousel .owl-theme .owl-dots .owl-dot.active span,
+.landing-carousel .owl-theme .owl-dots .owl-dot:hover span{
     background: var(--red-color) !important;
 }

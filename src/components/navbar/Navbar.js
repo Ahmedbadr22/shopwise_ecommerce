@@ -1,7 +1,7 @@
 import "./navbar-style.css";
 import logoImage from "../../images/logo_dark-3.png"
 
-const Navbar = () =>{
+const Navbar = ({linksRouts}) =>{
     return(
         <nav className="navbar navbar-expand-lg">
             <div className="container">
@@ -41,12 +41,7 @@ const Navbar = () =>{
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">
-                                Blog
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">
+                            <a className="nav-link" href={linksRouts.contactUsPath}>
                                 Contact Us
                             </a>
                         </li>

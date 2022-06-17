@@ -1,0 +1,13 @@
+.partners-section{
+    padding: 100px;
+}
+
+@media (max-width: 500px) {
+    .partners-section{
+        padding: 60px 40px 60px 40px;
+    }
+}
+.partners-section .partner-img{
+    width: 150px;
+    height: 90px;
+}

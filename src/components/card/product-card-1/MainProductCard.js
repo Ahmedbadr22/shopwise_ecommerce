@@ -1,19 +1,16 @@
 import "./main-product-card-style.css";
 import productImage from "../../../images/furniture_img8.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import {Button} from "@mui/material";
 
 const MainProductCard = () => {
 
     const [isFavProduct, setIsFavProduct] = useState(false);
 
- 
-
-    const handleFavSelection = () =>{
-        setIsFavProduct(!isFavProduct);
-    }
+    const handleFavSelection = () => setIsFavProduct(!isFavProduct);
 
     return(
-        <div className="product-card shadow mt-1 mb-1">
+        <div className="product-card shadow-sm mt-1 mb-1">
             <div className="product-header">
                 <div className="sale-off rounded-pill">56% off</div>
                 <div className="favorit-icon" onClick={handleFavSelection}>
@@ -40,9 +37,15 @@ const MainProductCard = () => {
                         <del>$150.00</del>
                     </span>
                 </div>
-                <div className="add-to-cart-btn" id="add-to-cart-button" >
-                    +
-                </div>
+                <Button
+                    variant="outlined"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" fill="currentColor"
+                         className="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fillRule="evenodd"
+                              d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                    </svg>
+                </Button>
             </div>
         </div>
     );

@@ -1,0 +1,5 @@
+.trending-items-product-section-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 40px 0;
+}

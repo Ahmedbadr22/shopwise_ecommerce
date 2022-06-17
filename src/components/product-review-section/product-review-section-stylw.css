@@ -1,0 +1,5 @@
+.review-section .comment-section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
